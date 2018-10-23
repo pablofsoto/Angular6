@@ -1,0 +1,12 @@
+<!-- conversations -->
+<div class="row">
+  <div class="conversation-wrap">
+    <!-- async is that it lets us use our async observable as if it was a sync collection. -->
+    <chat-thread
+        *ngFor="let thread of threads | async" 
+         [thread]="thread">
+    </chat-thread>
+
+  </div>
+</div>
+
